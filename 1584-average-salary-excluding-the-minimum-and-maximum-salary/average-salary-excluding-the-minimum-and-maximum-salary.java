@@ -13,8 +13,7 @@ class Solution {
         }
 
         sum = sum - (max+min);
-        double len = (salary.length -2);
-        double avg = (double)sum / len;
+        double avg = (double)sum / (salary.length -2);
         return avg;
     }
 }
