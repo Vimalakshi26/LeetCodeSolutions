@@ -4,14 +4,13 @@ class Solution {
         int second = Integer.MAX_VALUE;
         int third = Integer.MAX_VALUE;
 
-        for(int i = 0; i < nums.length; i++){
-            int ele = nums[i];
-            if(first >= ele){
-                first = ele;
-            }else if(second >= ele){
-                second = ele;
-            }else if(third >= ele){
-                third = ele;
+        for(int i = 0; i<nums.length; i++){
+            if(nums[i]<=first){
+                first = nums[i];
+            }else if(nums[i]<=second){
+                second = nums[i];
+            }else if(nums[i]<= third){
+                third = nums[i];
                 return true;
             }
         }
